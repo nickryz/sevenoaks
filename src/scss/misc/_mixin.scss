@@ -1,0 +1,42 @@
+$mq-tablet-ls				: 1210px !default;
+$mq-tablet-pr				: 992px !default;
+$mq-mobile					: 768px !default;
+
+@mixin tablet-ls {
+	@media (max-width : $mq-tablet-ls) {
+		@content;
+	}
+}
+ 
+@mixin tablet-pr {
+	@media (max-width : $mq-tablet-pr) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width : $mq-mobile) {
+		@content;
+	}
+}
+
+
+@mixin container {
+	max-width: 1030px;
+	padding: 0 15px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+
+	@include tablet-ls {
+		width: 100%;
+	}
+	
+	@include tablet-pr {
+		padding: 0; 
+	}
+
+	// @include mobile {
+	// 	width: 100%; 
+	// }
+}

@@ -1,0 +1,112 @@
+.main-slider {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}    
+    .main-slider__list {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+        .main-slider__item {
+            outline: none;
+            img {
+                max-width: 100%;
+                outline: none;
+            }
+        } 
+            .slick-arrow {
+                background: rgba(47,47,46,0.7);
+                position: absolute;
+                z-index: 5;
+                width: 49px;
+                height: 90px;
+                border: none;
+                top: 52%;
+                transform: translateY(-50%);
+                outline: none;
+                cursor: pointer;
+
+                @include tablet-pr {
+                    width: 35px;
+                    height: 55px;
+                }
+
+                @include mobile {
+                    width: 25px;
+                    height: 45px;
+                    background: transparent;
+                }
+            }
+
+            .arrow-prev {
+                left: 0;
+
+                &:before {
+                    content: '';
+                    background: url(../img/bannerarrow_prev.png) center center no-repeat;
+                    position: absolute;
+                    width: 15px;
+                    height: 38px;
+                    top: 50%;
+                    height: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .arrow-next {
+                right: 0;
+
+                &:before {
+                    content: '';
+                    background: url(../img/bannerarrow_next.png) center center no-repeat;
+                    position: absolute;
+                    width: 15px;
+                    height: 38px;
+                    top: 50%;
+                    height: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+.hello-wrap {
+    position: absolute;
+    width: 100%;
+    bottom: 39px;
+    
+    @include tablet-ls {
+        // left: 50px;
+    }
+    
+    @include mobile {
+        display: none;
+    }
+    
+}
+    .hello-title__wrap {
+        width: 459px;
+        height: 157px;
+        background: rgba(27,127,155,0.8);
+        padding: 20px 0 0 18px;
+
+        @include tablet-ls {
+            width: 280px;
+            height: 120px;
+            margin-left: 50px;
+        }
+    }
+        .hello-title {
+            color:  #ffffff;
+            font-size: 2rem;
+            font-weight: 300;
+            text-align: left;
+            margin: 0;
+            line-height: 1.25;
+            letter-spacing: 0.35px;
+
+            @include tablet-ls {
+                font-size: 1.5rem;
+            }
+    
+            span {
+                font-weight: 700;
+            }
+        }

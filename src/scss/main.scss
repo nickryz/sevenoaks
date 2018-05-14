@@ -1,0 +1,19 @@
+@import "../libs/normalize/normalize";
+@import "layout/components/slick";
+@import "misc/_vars.scss";
+@import "misc/_mixin.scss";
+@import "misc/_defolt.scss";
+@import "misc/_fonts.scss";
+
+// Layout
+@import "layout/_header.scss";
+@import "layout/_content.scss";
+@import "layout/_footer.scss";
+
+//components
+@import "layout/components/_slider.scss";
+@import "layout/components/_btn.scss";
+@import "layout/components/_modal.scss";
+
+
+

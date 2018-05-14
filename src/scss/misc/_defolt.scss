@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	min-height: 100vh;
+	font-family: $mainFont;
+
+	@include tablet-ls {
+		font-size: 14px;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background: #f3eeea;
+}
+
+.maincontent {
+	flex-grow: 1;
+}
+
+.container {
+	@include container;
+}
